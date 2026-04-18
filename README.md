@@ -215,3 +215,85 @@ Supabase PostgreSQL
  | returns saved course data
  v
 React Lesson Renderer
+
+Folder Structure
+
+project-root/
+|
+|-- client/
+|   |-- src/
+|   |   |-- components/
+|   |   |   |-- blocks/
+|   |   |   |   |-- CodeBlock.jsx
+|   |   |   |   |-- HeadingBlock.jsx
+|   |   |   |   |-- MCQBlock.jsx
+|   |   |   |   |-- ParagraphBlock.jsx
+|   |   |   |   |-- VideoBlock.jsx
+|   |   |   |
+|   |   |   |-- CourseCard.jsx
+|   |   |   |-- ErrorMessage.jsx
+|   |   |   |-- HinglishAudioPlayer.jsx
+|   |   |   |-- LessonPDFExporter.jsx
+|   |   |   |-- LessonRenderer.jsx
+|   |   |   |-- LoadingSpinner.jsx
+|   |   |   |-- PromptForm.jsx
+|   |   |   |-- SidebarNavigation.jsx
+|   |   |
+|   |   |-- pages/
+|   |   |   |-- HomePage.jsx
+|   |   |   |-- CoursePage.jsx
+|   |   |   |-- LessonPage.jsx
+|   |   |
+|   |   |-- utils/
+|   |   |   |-- api.js
+|   |   |   |-- useUnifiedAuth.js
+|   |   |
+|   |   |-- App.jsx
+|   |   |-- main.jsx
+|   |   |-- index.css
+|   |
+|   |-- index.html
+|   |-- package.json
+|   |-- vite.config.js
+|   |-- vercel.json
+|
+|-- server/
+|   |-- config/
+|   |   |-- env.js
+|   |   |-- supabase.js
+|   |
+|   |-- controllers/
+|   |   |-- audioController.js
+|   |   |-- courseController.js
+|   |   |-- youtubeController.js
+|   |
+|   |-- middlewares/
+|   |   |-- auth.js
+|   |   |-- errorHandler.js
+|   |   |-- validate.js
+|   |
+|   |-- routes/
+|   |   |-- audioRoutes.js
+|   |   |-- courseRoutes.js
+|   |   |-- youtubeRoutes.js
+|   |
+|   |-- services/
+|   |   |-- aiService.js
+|   |   |-- audioService.js
+|   |   |-- courseRepository.js
+|   |   |-- youtubeService.js
+|   |
+|   |-- supabase/
+|   |   |-- schema.sql
+|   |
+|   |-- utils/
+|   |   |-- safeJson.js
+|   |   |-- templateGenerator.js
+|   |
+|   |-- server.js
+|   |-- package.json
+|
+|-- README.md
+|-- package.json
+|-- .gitignore
+
